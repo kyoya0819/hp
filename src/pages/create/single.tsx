@@ -49,7 +49,7 @@ class App extends Component<Props> {
                             project.image.map(
                                 (path:string, i:number) => (
                                     <li key={i}>
-                                        <a href={ '/images/' + path } target="_blank">
+                                        <a href={ '/images/' + path } target="_blank" rel="noreferrer">
                                             <img src={ '/images/' + path } alt={project.app_name} />
                                         </a>
                                     </li>
