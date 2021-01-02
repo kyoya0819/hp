@@ -33,19 +33,17 @@ class App extends Component<Props> {
 
         return (
             <div className="inner">
-                <h2 className="h2">{project.title}</h2>
+                <h2>{project.title}</h2>
+                <h3>{project.app_name}</h3>
+                <div id="body" dangerouslySetInnerHTML={{__html: project_body}} />
                 <section>
-                    <h3 className="h3">{project.app_name}</h3>
-                    <div id="body" className="left" dangerouslySetInnerHTML={{__html: project_body}} />
-                </section>
-                <section>
-                    <h4 className="h4">仕様技術（タグ）</h4>
-                    <ul id="teches" className="left">
+                    <h4>仕様技術（タグ）</h4>
+                    <ul id="teches">
                         { project.tech.map((name, i) => <li key={i}>{name}</li>) }
                     </ul>
                 </section>
                 <section>
-                    <h4 className="h4">画像</h4>
+                    <h4>画像</h4>
                     <ul id="images">
                         {
                             project.image.map(
