@@ -21,7 +21,10 @@
             "PHP", "Laravel", "CSS", "Sass", "SCSS", "JavaScript", "jQuery", "Logo"
         ],
         "bodies": [
-            "CivicTech Challenge Cup U-22に向けて作成。"
+            "CivicTech Challenge Cup U-22という大会に向けて作成。",
+            "「速く」「軽く」「美しく」を信念に開発。",
+            "その結果、JavaScript無効化環境や、IE11のサポートも達成。",
+            "この頃、自分の開発スタイルが定まる。"
         ],
         "image": []
     },
@@ -32,7 +35,9 @@
             "PHP", "Laravel", "CSS", "Sass", "SCSS", "JavaScript", "React.js", "BootStrap", "axios", "TypeScript"
         ],
         "bodies": [
-            "CivicTech Challenge Cup U-22の反省を生かし開発。"
+            "CivicTech Challenge Cup U-22の終了後、反省点を活かして開発。",
+            "1つのアプリケーションを2つに分けるという初めての経験。",
+            "今現在も鋭意分割中。\n37000行にも至る変更でレビュワーにブチギレられそう。"
         ],
         "image": []
     }
