@@ -18,7 +18,7 @@ export default class CreateCard extends Component<Props> {
             <li>
                 <Link to={route('create:id', {id: this.props.idNum})}>
                     <div>
-                        <img src={ this.props.data.image.length > 0 ? '/images/' : NoImage } alt={this.props.data.title} />
+                        <img src={ this.props.data.image.length > 0 ? '/images/' + this.props.data.image[0] : NoImage } alt={this.props.data.title} />
                     </div>
                     <p>{this.props.data.title}</p>
                 </Link>
