@@ -4,6 +4,7 @@
 body {
     background: $black;
     color: $white;
+    padding-bottom: 3rem;
 
     &::before {
         content: '';
