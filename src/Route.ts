@@ -35,6 +35,5 @@ export default function route(name: string, value?: object): string
 
 const routes: {} = {
     index: '/',
-    about: '/about',
-    create: '/create'
+    about: '/about'
 };
