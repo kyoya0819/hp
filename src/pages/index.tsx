@@ -35,6 +35,7 @@ const Index = () => {
                 <div className="left">
                     <p>{ t('日本に住む、{{year}}歳のシロクマ。', { year: year() }) }</p>
                     <p>{ t('PHP大好きの生粋のPHPer。') }</p>
+                    <p>{ t('日本大学の附属高校の生徒。')}</p>
                     <p>{ t('普段はバックエンドが主、デザイン・ロゴ作成もしばしば。') }</p>
                 </div>
             </section>
