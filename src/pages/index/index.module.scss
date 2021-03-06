@@ -1,0 +1,11 @@
+.index {
+    text-align: center;
+
+    section:nth-of-type(n+2) {
+        margin-top: 5rem;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
