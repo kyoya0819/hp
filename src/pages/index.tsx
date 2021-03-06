@@ -41,19 +41,19 @@ const Index = () => {
             </section>
             <section>
                 <h3>PROGRAMMING SKILLS</h3>
-                <ul className="skills">
+                <ul className="list">
                     { skills.programming.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
                 </ul>
             </section>
             <section>
                 <h3>OTHER SKILLS</h3>
-                <ul className="skills">
+                <ul className="list">
                     { skills.other.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
                 </ul>
             </section>
             <section>
                 <h3>LINKS</h3>
-                <ul id="links">
+                <ul className="list">
                     <li><a href="https://twitter.com/kyoya0819" target="_blank" rel="noreferrer">Twitter</a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=100054776536464" target="_blank" rel="noreferrer">Facebook</a></li>
                     <li><a href="https://github.com/kyoya0819" target="_blank" rel="noreferrer">GitHub</a></li>
