@@ -5,7 +5,7 @@ import './header.scss';
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-    const [t, i18n] = useTranslation();
+    const [, i18n] = useTranslation();
     const [lang, setLang] = useState('ja');
 
     useEffect(() => {
