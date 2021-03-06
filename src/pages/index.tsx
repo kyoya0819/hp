@@ -6,7 +6,7 @@ import './index.scss';
 
 import moment from 'moment';
 import 'moment-timezone';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const year = () => {
     moment.tz.setDefault('Asia/Tokyo');
@@ -40,9 +40,15 @@ const Index = () => {
                 </div>
             </section>
             <section>
-                <h3>SKILLS</h3>
-                <ul id="skills">
-                    { skills.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
+                <h3>PROGRAMMING SKILLS</h3>
+                <ul className="skills">
+                    { skills.programming.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
+                </ul>
+            </section>
+            <section>
+                <h3>OTHER SKILLS</h3>
+                <ul className="skills">
+                    { skills.other.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
                 </ul>
             </section>
             <section>

@@ -18,7 +18,7 @@ section {
     }
 }
 
-#skills, #links {
+.skills, #links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +34,9 @@ section {
             border-radius: .375rem;
             color: $white;
             text-decoration: none;
+        }
+
+        a {
             transition: background-color .3s;
 
             &:hover {
