@@ -1,24 +1,6 @@
-@import './../sass/colors';
+@import '../../../sass/colors';
 
-section {
-    text-align: center;
-
-    &:nth-of-type(n+2) {
-        margin-top: 5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    .left {
-        margin-top: 1rem;
-        display: inline-block;
-        text-align: left;
-    }
-}
-
-.list {
+.links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;

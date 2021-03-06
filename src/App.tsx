@@ -5,7 +5,7 @@ import i18n from "i18next";
 import { initReactI18next } from 'react-i18next';
 
 import Header from './components/header';
-import Index from './pages/index';
+import Index from './pages/index/index';
 import NotFound from './pages/Error404';
 
 import translate_en from './data/en.json';
