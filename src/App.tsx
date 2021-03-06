@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import route from './Route';
 import i18n from "i18next";
-import { initReactI18next, useTranslation } from 'react-i18next';
+import { initReactI18next } from 'react-i18next';
 
 import Header from './components/header';
 import Index from './pages/index';
