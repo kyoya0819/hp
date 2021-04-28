@@ -1,6 +1,6 @@
 {
-    "short_name": "React App",
-    "name": "Create React App Sample",
+    "short_name": "kyoya0819",
+    "name": "kyoya0819 | シロクマ高校生エンジニア",
     "icons": [
         {
             "src": "favicon.ico",
@@ -18,7 +18,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "https://about.kyoya0819.com",
+    "start_url": "https://kyoya0819.com",
     "display": "standalone",
     "theme_color": "#222222",
     "background_color": "#222222"
