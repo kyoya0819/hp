@@ -3,7 +3,7 @@ import 'moment-timezone';
 
 import scss from './index.module.scss';
 
-import Top from './top/top';
+import About from './about/about';
 import ProgrammingSkills from './skills/programming';
 import OtherSkills from './skills/other';
 import Links from './links/links';
@@ -14,7 +14,7 @@ const Index = () => {
 
     return (
         <div className={`inner ${ scss.index }`}>
-            <Top />
+            <About />
 
             <ProgrammingSkills />
 

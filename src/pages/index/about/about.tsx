@@ -2,7 +2,7 @@ import React from 'react';
 import moment from "moment";
 import { useTranslation } from "react-i18next";
 
-import scss from './top.module.scss';
+import scss from './about.module.scss';
 
 const year = () => {
     moment.tz.setDefault('Asia/Tokyo');
@@ -19,7 +19,7 @@ const year = () => {
         return now_year - birth_year - 1;
 }
 
-const Top = () => {
+const About = () => {
 
     const { t } = useTranslation();
 
@@ -36,4 +36,4 @@ const Top = () => {
     );
 }
 
-export default Top;
+export default About;
