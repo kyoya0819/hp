@@ -5,7 +5,7 @@ const Links = () => {
 
     return (
         <section>
-            <h3>LINKS</h3>
+            <h2>LINKS</h2>
             <ul className={ scss.links }>
                 <li><a href="https://twitter.com/kyoya0819" target="_blank" rel="noreferrer">Twitter</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100054776536464" target="_blank" rel="noreferrer">Facebook</a></li>

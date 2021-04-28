@@ -6,7 +6,7 @@ const OtherSkills = () => {
 
     return (
         <section>
-            <h3>OTHER SKILLS</h3>
+            <h2>OTHER SKILLS</h2>
             <ul className={ scss.skills }>
                 { skills.other.map((name, i) => <li key={ i }><span>{ name }</span></li>) }
             </ul>
