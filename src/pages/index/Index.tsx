@@ -1,11 +1,12 @@
 import React from 'react';
 import 'moment-timezone';
 
-import scss from './index.module.scss';
+import scss from './Index.module.scss';
 
 import About from './about/about';
 import ProgrammingSkills from './skills/programming';
 import OtherSkills from './skills/other';
+import Timeline from './timeline/timeline';
 import Links from './links/links';
 
 const Index = () => {
@@ -19,6 +20,8 @@ const Index = () => {
             <ProgrammingSkills />
 
             <OtherSkills />
+
+            <Timeline />
 
             <Links />
         </div>

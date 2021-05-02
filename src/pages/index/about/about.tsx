@@ -8,10 +8,9 @@ const year = () => {
     moment.tz.setDefault('Asia/Tokyo');
 
     const now_year = moment().year();
-    const birth_year = 2003;
+    const [birth_year, birth_date] = [2003, 819];
 
     const now_date = Number(moment().month() + 1 + '' + moment().date());
-    const birth_date = 819;
 
     if (now_date >= birth_date)
         return now_year - birth_year;
