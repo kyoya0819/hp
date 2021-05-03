@@ -1,3 +1,5 @@
+@import './colors';
+
 * {
     margin: 0;
     padding: 0;
@@ -15,4 +17,19 @@ button {
     cursor: pointer;
     outline: none;
     appearance: none;
+}
+
+a {
+    color: $blue-lighter;
+    text-decoration: none;
+    transition: color 300ms;
+
+    &:hover {
+        color: $blue;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $blue-darker;
+    }
 }
