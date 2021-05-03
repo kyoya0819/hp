@@ -1,30 +1,27 @@
-import React from 'react';
-import 'moment-timezone';
+import React, { Fragment } from 'react';
 
-import scss from './Index.module.scss';
-
-import About from './about/about';
-import ProgrammingSkills from './skills/programming';
-import OtherSkills from './skills/other';
-import Timeline from './timeline/timeline';
-import Links from './links/links';
+import First from './First/First';
+import About from './About/About';
+import History from './History/History';
+import Skills from './Skill/Skills';
+import Links from './Links/Links';
+import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 const Index = () => {
 
     document.title = "kyoya0819 | TOP";
 
     return (
-        <div className={`inner ${ scss.index }`}>
+        <Fragment>
+            <First />
             <About />
-
-            <ProgrammingSkills />
-
-            <OtherSkills />
-
-            <Timeline />
-
+            <History />
+            <Skills />
             <Links />
-        </div>
+            <Contact />
+            <Footer />
+        </Fragment>
     );
 }
 

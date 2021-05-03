@@ -1,22 +1,29 @@
 import React from 'react';
-import scss from './links.module.scss';
+
+import scss from './Links.module.scss';
+
+import twitter from './../../../images/twitter.svg';
+import github from './../../../images/github.png';
+import facebook from './../../../images/facebook.png';
 
 const Links = () => {
 
     return (
-        <section>
-            <h2>LINKS</h2>
-            <ul className={ scss.links }>
-                <li><a href="https://twitter.com/kyoya0819" target="_blank" rel="noreferrer">Twitter</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100054776536464" target="_blank" rel="noreferrer">Facebook</a></li>
-                <li><a href="https://github.com/kyoya0819" target="_blank" rel="noreferrer">GitHub</a></li>
-                <li><a href="https://www.resume.id/kyoya0819" target="_blank" rel="noreferrer">RESUME</a></li>
-                <li><a href="https://teratail.com/users/kyoya0819" target="_blank" rel="noreferrer">teratail</a></li>
-                <li><a href="https://qiita.com/kyoya0819" target="_blank" rel="noreferrer">Qiita</a></li>
-                <li><a href="https://pw.kyoya0819.com/" target="_blank" rel="noreferrer">PasswordMarker</a></li>
-            </ul>
-        </section>
+        <div className={ scss.links }>
+            <div className="inner">
+                <h2>リンク / Links</h2>
+                <ul>
+                    <li><a href="https://twitter.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ twitter } alt="Twitter's logo" />Twitter</a></li>
+                    <li><a href="https://github.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub's logo" />GitHub</a></li>
+                    <li><a href="https://facebook.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ facebook } alt="Facebook's logo" />Facebook</a></li>
+                    <li><a href="https://www.resume.id/kyoya0819" rel="noopener noreferrer" target="_blank">RESUME</a></li>
+                    <li><a href="https://teratail.com/users/kyoya0819" rel="noopener noreferrer" target="_blank">teratail</a></li>
+                    <li><a href="https://qiita.com/kyoya0819" rel="noopener noreferrer" target="_blank">Qiita</a></li>
+                    <li><a href="https://pw.kyoya0819.com/" rel="noopener noreferrer" target="_blank">PasswordMaker</a></li>
+                </ul>
+            </div>
+        </div>
     );
-}
+};
 
 export default Links;

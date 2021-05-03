@@ -1,29 +1,35 @@
-@import '../../../sass/colors';
-
 .links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 8rem;
 
-    li {
-        margin: .5rem 1rem;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
 
-        a, span {
-            padding: .5rem 1rem;
-            display: inline-block;
-            background: #FFF3;
-            border-radius: .375rem;
-            color: $white;
-            text-decoration: none;
-        }
-
-        a {
-            transition: background-color .3s;
+        li a {
+            display: inline-flex;
+            align-items: center;
+            padding: .25rem .75rem;
+            margin: 0 1rem 1rem 0;
+            background: #FFF2;
+            color: #FFF;
+            border-radius: .25rem;
+            transition: opacity 300ms;
 
             &:hover {
-                background: #DDD3;
-                color: #DDD;
+                opacity: .9;
+                text-decoration: none;
+            }
+
+            &:active {
+                opacity: .8;
+            }
+
+            img {
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: .75rem
             }
         }
     }

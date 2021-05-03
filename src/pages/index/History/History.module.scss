@@ -1,0 +1,44 @@
+.history {
+    margin-top: 8rem;
+
+    .list {
+        list-style: none;
+        border-left: solid 2px #FFF;
+        margin-left: 1rem;
+        padding: .75rem 0 calc(.75rem + 8px * 1.7320508 - 4px) 1rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            border-right: 8px solid transparent;
+            border-top: calc(8px * 1.7320508) solid #FFF;
+            border-left: 8px solid transparent;
+            position: absolute;
+            left: -9px;
+            bottom: -4px;
+        }
+
+        li {
+            display: block;
+            position: relative;
+            margin-bottom: .75rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #FFF;
+                position: absolute;
+                top: calc(50% - 4px);
+                left: calc(-1rem - 5px);
+            }
+        }
+    }
+}
