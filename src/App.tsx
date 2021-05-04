@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import route from './Route';
 
 import Index from './pages/index/Index';
-import NotFound from './pages/Error404';
+import NotFound from './pages/Error404/Error404';
 
 const App = () => {
 

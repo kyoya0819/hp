@@ -1,0 +1,41 @@
+@import './../Index/First/First.module';
+
+.title {
+    font-size: 4rem!important;
+    line-height: 1.75!important;
+
+    @media screen and (max-width: 900px) {
+        font-size: 3rem!important;
+    }
+
+    @media screen and (max-width: 650px) {
+        font-size: 2rem!important;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem!important;
+    }
+}
+
+.to_top {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 50;
+    color: $white;
+    text-decoration: underline;
+    transition: opacity 300ms;
+
+    &:hover {
+        color: inherit;
+        opacity: 0.8;
+    }
+
+    &:active {
+        color: inherit;
+        opacity: 0.6;
+    }
+}
