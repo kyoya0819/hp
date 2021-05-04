@@ -2,12 +2,14 @@ import React from 'react';
 
 import scss from './About.module.scss';
 
+import Title from './../../../components/Title/Title';
+
 const About = () => {
 
     return (
         <div className={ scss.about }>
             <div className="inner">
-                <h2>自己紹介 / About</h2>
+                <Title title="自己紹介 / About" />
                 <div>
                     <p>
                         千葉県の日本大学の附属高校に通う高校3年生。2003年生まれの17歳。

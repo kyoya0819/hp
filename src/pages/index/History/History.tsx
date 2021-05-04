@@ -1,12 +1,15 @@
 import React from 'react';
+
 import scss from './History.module.scss';
+
+import Title from './../../../components/Title/Title';
 
 const History = () => {
 
     return (
         <div className={ scss.history }>
             <div className="inner">
-                <h2>経歴 / History</h2>
+                <Title title="経歴 / History" />
                 <ul className={ scss.list }>
                     <li>2003年 - 神奈川県生まれ</li>
                     <li>2010年 - 千葉県の公立小学校に入学</li>

@@ -6,12 +6,14 @@ import twitter from './../../../images/twitter.svg';
 import github from './../../../images/github.png';
 import facebook from './../../../images/facebook.png';
 
+import Title from './../../../components/Title/Title';
+
 const Links = () => {
 
     return (
         <div className={ scss.links }>
             <div className="inner">
-                <h2>リンク / Links</h2>
+                <Title title="リンク / Links" />
                 <ul>
                     <li><a href="https://twitter.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ twitter } alt="Twitter's logo" />Twitter</a></li>
                     <li><a href="https://github.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub's logo" />GitHub</a></li>

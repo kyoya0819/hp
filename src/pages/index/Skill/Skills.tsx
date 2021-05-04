@@ -2,12 +2,14 @@ import React from 'react';
 
 import scss from './Skills.module.scss';
 
+import Title from './../../../components/Title/Title';
+
 const Skills = () => {
 
     return (
         <div className={ scss.skills }>
             <div className="inner">
-                <h2>スキル / Skills</h2>
+                <Title title="スキル / Skills" />
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li><li>Sass</li>
