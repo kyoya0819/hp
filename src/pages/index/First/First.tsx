@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import scss from './First.module.scss';
 
 import background from './../../../images/background.webp';
-import background_min from './../../../images/background-min.webp';
 
 const First = () => {
 
@@ -13,15 +12,9 @@ const First = () => {
         first_tag.style.height = window.innerHeight + 'px';
     });
 
-    useEffect(() => {
-
-        let background_image = document.getElementById("sky") as HTMLElement;
-        background_image.setAttribute('src', background);
-    }, []);
-
     return (
         <div className={ scss.first }>
-            <img src={ background_min } id="sky" alt="sky" />
+            <img src={ background } id="sky" alt="sky" />
             <div className="inner">
                 <h1>kyoya0819</h1>
             </div>
