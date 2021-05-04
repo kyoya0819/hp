@@ -8,7 +8,7 @@ import background from "../../images/background.webp";
 
 const NotFound = () => {
 
-    document.title = "kyoya0819 | NotFound";
+    document.title = "kyoya0819 | NOT FOUND";
 
     useEffect(() => {
 
