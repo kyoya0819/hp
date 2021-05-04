@@ -6,7 +6,6 @@ import Histories from './Histories/Histories';
 import Skills from './Skills/Skills';
 import Links from './Links/Links';
 import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
 
 const Index = () => {
 
@@ -20,7 +19,6 @@ const Index = () => {
             <Skills />
             <Links />
             <Contact />
-            <Footer />
         </Fragment>
     );
 }
