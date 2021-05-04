@@ -17,12 +17,12 @@
             transition: opacity 300ms;
 
             &:hover {
-                opacity: .9;
+                opacity: 80%;
                 text-decoration: none;
             }
 
             &:active {
-                opacity: .8;
+                opacity: 60%;
             }
 
             img {

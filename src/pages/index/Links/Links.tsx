@@ -2,7 +2,7 @@ import React from 'react';
 
 import scss from './Links.module.scss';
 
-import twitter from './../../../images/twitter.svg';
+import twitter from './../../../images/twitter.png';
 import github from './../../../images/github.png';
 import facebook from './../../../images/facebook.png';
 
