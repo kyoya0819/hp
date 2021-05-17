@@ -9,8 +9,9 @@ import json from
 const Skills = () => {
     
     let array_skills: ReactElement[] = [];
-    Object.keys(json).forEach((value: string, key: string) => {
-        array_skills.push(<li>{ string }</li>);
+    Object.keys(json).forEach((key: string) => {
+        let skill_name = json[key];
+        array_skills.push(<li>{ skill_name }</li>);
     });
 
     return (
