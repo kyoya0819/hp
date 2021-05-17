@@ -10,7 +10,7 @@ const Skills = () => {
     
     let array_skills: ReactElement[] = [];
     Object.keys(json).forEach((key: string) => {
-        let skill_name = json[key];
+        let skill_name = json[Number(key)];
         array_skills.push(<li>{ skill_name }</li>);
     });
 
