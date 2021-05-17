@@ -4,7 +4,7 @@ import scss from './Skills.module.scss';
 
 import Title from './../../../components/Title/Title';
 
-import json from
+import json from './../../../data/skills.json';
 
 const Skills = () => {
     
