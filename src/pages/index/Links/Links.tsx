@@ -2,11 +2,11 @@ import React from 'react';
 
 import scss from './Links.module.scss';
 
-import twitter from './../../../images/twitter.png';
-import github from './../../../images/github.png';
-import facebook from './../../../images/facebook.png';
+import twitter from 'images/twitter.png';
+import github from 'images/github.png';
+import facebook from 'images/facebook.png';
 
-import Title from './../../../components/Title/Title';
+import Title from 'components/Title/Title';
 
 const Links = () => {
 

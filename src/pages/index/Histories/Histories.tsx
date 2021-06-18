@@ -2,7 +2,7 @@ import React from 'react';
 
 import scss from './Histories.module.scss';
 
-import Title from './../../../components/Title/Title';
+import Title from 'components/Title/Title';
 
 const Histories = () => {
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import route from '../../Route';
+import route from 'Route';
 
 import scss from "./Error404.module.scss";
 
-import background from "../../images/background.webp";
+import background from "images/background.webp";
 
 const NotFound = () => {
 

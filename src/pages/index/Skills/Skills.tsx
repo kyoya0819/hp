@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 
 import scss from './Skills.module.scss';
 
-import Title from './../../../components/Title/Title';
+import Title from 'components/Title/Title';
 
-import json from './../../../data/skills.json';
+import json from 'data/skills.json';
 
 const Skills = () => {
     

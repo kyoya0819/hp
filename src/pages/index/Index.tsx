@@ -7,7 +7,7 @@ import Skills from './Skills/Skills';
 import Links from './Links/Links';
 import Contact from './Contact/Contact';
 
-import Footer from './../../components/Footer/Footer';
+import Footer from 'components/Footer/Footer';
 
 const Index = () => {
 

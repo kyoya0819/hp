@@ -1,7 +1,7 @@
 import React from 'react';
 
 import scss from './Contact.module.scss';
-import Title from './../../../components/Title/Title';
+import Title from 'components/Title/Title';
 
 const Contact = () => {
 

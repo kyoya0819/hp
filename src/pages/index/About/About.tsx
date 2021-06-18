@@ -2,7 +2,7 @@ import React from 'react';
 
 import scss from './About.module.scss';
 
-import Title from './../../../components/Title/Title';
+import Title from 'components/Title/Title';
 
 const About = () => {
 
