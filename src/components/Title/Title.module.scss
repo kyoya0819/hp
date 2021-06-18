@@ -19,6 +19,7 @@
     h2 {
         display: inline-block;
         position: relative;
+        font-weight: normal;
 
         &::before {
             content: '';
