@@ -3,9 +3,6 @@ import React, { useEffect } from 'react';
 import scss from './First.module.scss';
 
 import background from 'images/background.webp';
-import twitter from "images/twitter.png";
-import github from "images/github.png";
-import facebook from "images/facebook.png";
 
 const First = () => {
 
@@ -21,15 +18,7 @@ const First = () => {
             <div className="inner">
                 <h1>kyoya0819</h1>
             </div>
-            <div className={ scss.link }>
-                <div className="inner">
-                    <ul>
-                        <li><a href="https://twitter.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ twitter } alt="Twitter's logo" /></a></li>
-                        <li><a href="https://github.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub's logo" /></a></li>
-                        <li><a href="https://facebook.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ facebook } alt="Facebook's logo" /></a></li>
-                    </ul>
-                </div>
-            </div>
+
             <div className={ scss.box } />
             <div className={ scss.more }>
                 <div onClick={ scroll }>
