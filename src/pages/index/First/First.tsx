@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from "react";
 
-import scss from './First.module.scss';
+import scss from "./First.module.scss";
 
-import background from 'images/background.webp';
+import background from "images/background.webp";
 
-const First = () => {
+const First: FC = () => {
 
     useEffect(() => {
 
-        let first_tag = document.getElementsByClassName(scss.first)[0] as HTMLElement;
-        first_tag.style.height = window.innerHeight + 'px';
+        const first_tag = document.getElementsByClassName(scss.first)[0] as HTMLElement;
+        first_tag.style.height = window.innerHeight + "px";
     });
 
     return (
@@ -39,19 +39,19 @@ const easeInOut = (x: number) => {
 
     // https://gist.github.com/gre/1650294
     return x<.5 ? 4*x*x*x : (x-1)*(2*x-2)*(2*x-2)+1;
-}
+};
 
 
 const scroll = () => {
 
     let count = 0;
-    let first = window.pageYOffset;
-    let height = window.innerHeight - window.pageYOffset;
+    const first = window.pageYOffset;
+    const height = window.innerHeight - window.pageYOffset;
 
-    let move = function () {
+    const move = function () {
         count++;
 
-        let position = first + height * easeInOut(count / 100);
+        const position = first + height * easeInOut(count / 100);
         window.scrollTo(0, position);
 
         if (position < window.innerHeight)
@@ -59,6 +59,6 @@ const scroll = () => {
     };
 
     requestAnimationFrame(move);
-}
+};
 
 export default First;

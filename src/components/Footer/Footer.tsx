@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from "react";
 
-import scss from './Footer.module.scss';
+import scss from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer: FC = () => {
 
     return (
         <footer className={ scss.footer }>

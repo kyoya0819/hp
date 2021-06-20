@@ -13,27 +13,27 @@
  *  -> '/3/hi'
  * -------------------------------------------
  */
-export default function route(name: string, value?: object): string
+export default function route(name: string, value?: {[key: string]: string|number}): string
 {
-    let names:string[] = name.split(':');
+    const names:string[] = name.split(":");
 
     if (2 > names.length)
         return routes[name as keyof typeof routes];
 
-    let path: string = routes[names[0] as keyof typeof routes];
+    const path: string = routes[names[0] as keyof typeof routes];
 
-    if (typeof value === 'undefined')
-        return (path.slice(-1) === '/' ? path.slice(0, -1) : path) + '/' + name.match(/:\S+$/);
+    if (typeof value === "undefined")
+        return (path.slice(-1) === "/" ? path.slice(0, -1) : path) + "/" + name.match(/:\S+$/);
 
-    let parameters:string = name.match(/:\S+$/) + '';
+    let parameters:string = name.match(/:\S+$/) + "";
 
     Object.keys(value).forEach(function (key: string) {
-        parameters = parameters.replace(':' + key, '/' + value[key as keyof typeof value]);
+        parameters = parameters.replace(":" + key, "/" + value[key as keyof typeof value]);
     });
-    return (path.slice(-1) === '/' ? path.slice(0, -1) : path) + parameters;
+    return (path.slice(-1) === "/" ? path.slice(0, -1) : path) + parameters;
 }
 
-const routes: {} = {
-    index: '/',
-    about: '/about'
+const routes = {
+    index: "/",
+    about: "/about"
 };

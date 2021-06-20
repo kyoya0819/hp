@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from "react";
 
-import scss from './Contact.module.scss';
-import Title from 'components/Title/Title';
+import scss from "./Contact.module.scss";
+import Title from "components/Title/Title";
 
-const Contact = () => {
+const Contact: FC = () => {
 
     return (
         <div className={ scss.contact }>

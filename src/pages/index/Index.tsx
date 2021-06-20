@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React, { FC, Fragment } from "react";
 
-import First from './First/First';
-import About from './About/About';
-import Histories from './Histories/Histories';
-import Skills from './Skills/Skills';
-import Links from './Links/Links';
-import Contact from './Contact/Contact';
+import First from "./First/First";
+import About from "./About/About";
+import Histories from "./Histories/Histories";
+import Skills from "./Skills/Skills";
+import Links from "./Links/Links";
+import Contact from "./Contact/Contact";
 
-import Footer from 'components/Footer/Footer';
+import Footer from "components/Footer/Footer";
 
-const Index = () => {
+const Index: FC = () => {
 
     document.title = "kyoya0819 | TOP";
 
@@ -26,6 +26,6 @@ const Index = () => {
             <Footer />
         </Fragment>
     );
-}
+};
 
 export default Index;

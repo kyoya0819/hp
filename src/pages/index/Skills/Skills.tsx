@@ -1,16 +1,16 @@
-import React, { ReactElement } from 'react';
+import React, { FC, ReactElement } from "react";
 
-import scss from './Skills.module.scss';
+import scss from "./Skills.module.scss";
 
-import Title from 'components/Title/Title';
+import Title from "components/Title/Title";
 
-import json from 'data/skills.json';
+import json from "data/skills.json";
 
-const Skills = () => {
+const Skills: FC = () => {
     
-    let array_skills: ReactElement[] = [];
+    const array_skills: ReactElement[] = [];
     Object.keys(json).forEach((key: string) => {
-        let skill_name = json[Number(key)];
+        const skill_name = json[Number(key)];
         array_skills.push(<li>{ skill_name }</li>);
     });
 

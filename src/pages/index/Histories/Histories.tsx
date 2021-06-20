@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import scss from './Histories.module.scss';
+import scss from "./Histories.module.scss";
 
-import Title from 'components/Title/Title';
+import Title from "components/Title/Title";
 import histories_json from "data/histories.json";
 
 const Histories: FC = () => {
@@ -15,8 +15,8 @@ const Histories: FC = () => {
                 <Title title="経歴 / Histories" />
                 <ul className={ scss.list }>{
                     Object.keys(histories_object).map((key) => {
-                        return <History year={key} content={histories_object[key]} /> }
-                    )
+                        return <History year={key} content={histories_object[key]} key={ key } />;
+                    })
                 }</ul>
             </div>
         </div>
