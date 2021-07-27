@@ -1,12 +1,13 @@
-import React, { FC, Fragment } from "react";
+import React, { FC, Fragment, lazy, Suspense } from "react";
 
 import First from "./First/First";
-import About from "./About/About";
-import Histories from "./Histories/Histories";
-import Created from "./Created/Created";
-import Skills from "./Skills/Skills";
-import Links from "./Links/Links";
-import Contact from "./Contact/Contact";
+
+const About     = lazy(() => import("./About/About"));
+const Histories = lazy(() => import("./Histories/Histories"));
+const Created   = lazy(() => import("./Created/Created"));
+const Skills    = lazy(() => import("./Skills/Skills"));
+const Links     = lazy(() => import("./Links/Links"));
+const Contact   = lazy(() => import("./Contact/Contact"));
 
 import Footer from "components/Footer/Footer";
 
@@ -18,12 +19,14 @@ const Index: FC = () => {
         <Fragment>
             <main>
                 <First />
-                <About />
-                <Histories />
-                <Created />
-                <Skills />
-                <Links />
-                <Contact />
+                <Suspense fallback={<></>}>
+                    <About />
+                    <Histories />
+                    <Created />
+                    <Skills />
+                    <Links />
+                    <Contact />
+                </Suspense>
             </main>
             <Footer />
         </Fragment>
