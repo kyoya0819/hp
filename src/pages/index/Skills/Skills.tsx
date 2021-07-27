@@ -17,7 +17,7 @@ const Skills: FC = () => {
     return (
         <div className={ scss.skills }>
             <div className="inner">
-                <Title title="スキル / Skills" />
+                <Title>スキル / Skills</Title>
                 <ul>{ array_skills.map((content) => content) }</ul>
             </div>
         </div>

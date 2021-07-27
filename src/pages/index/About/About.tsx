@@ -9,7 +9,7 @@ const About: FC = () => {
     return (
         <div className={ scss.about }>
             <div className="inner">
-                <Title title="自己紹介 / About" />
+                <Title>自己紹介 / About</Title>
                 <div>
                     <p>
                         千葉県の日本大学の附属高校に通う高校3年生。2003年生まれの17歳。

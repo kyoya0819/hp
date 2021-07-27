@@ -13,7 +13,7 @@ const Links: FC = () => {
     return (
         <div className={ scss.links }>
             <div className="inner">
-                <Title title="リンク / Links" />
+                <Title>リンク / Links</Title>
                 <ul>
                     <li><a href="https://twitter.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ twitter } alt="Twitter's logo" />Twitter</a></li>
                     <li><a href="https://github.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub's logo" />GitHub</a></li>

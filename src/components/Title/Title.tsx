@@ -1,35 +1,20 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 
 import scss from "./Title.module.scss";
 
-interface TitleInterface {
-    title: string
-}
-
-const Title: FC<TitleInterface> = ({ title }) => {
-
-    useEffect(() => {
-        document.addEventListener("scroll", onScroll);
-        return () => document.removeEventListener("scroll", onScroll);
-    });
+const Title: FC = ({ children }) => {
 
     return (
-        <div className={ scss.title }>
-            <h2>{ title }</h2>
-        </div>
+        <h2 className={ scss.title }>
+            <span className={ scss.title_left }>
+                { children }
+                <span />
+            </span>
+            <span className={ scss.title_right }>
+                <span />
+            </span>
+        </h2>
     );
-};
-
-const onScroll = () => {
-
-    const elements = document.getElementsByClassName( scss.title );
-    Object.keys(elements).forEach((key) => {
-        const element = elements[Number(key)];
-        const top = element.getBoundingClientRect().top;
-
-        if (window.pageYOffset + window.innerHeight > window.pageYOffset + top)
-            element.classList.add(scss.view);
-    });
 };
 
 export default Title;
