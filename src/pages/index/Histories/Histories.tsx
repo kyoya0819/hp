@@ -10,7 +10,7 @@ const Histories: FC = () => {
     const histories_object: {[key: string]: string[]} = histories_json;
 
     return (
-        <div className={ scss.history }>
+        <section className={ scss.history }>
             <div className="inner">
                 <Title>経歴 / Histories</Title>
                 <ul className={ scss.list }>{
@@ -21,7 +21,7 @@ const Histories: FC = () => {
                     })
                 }</ul>
             </div>
-        </div>
+        </section>
     );
 };
 

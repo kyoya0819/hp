@@ -11,7 +11,7 @@ import Title from "components/Title/Title";
 const Links: FC = () => {
 
     return (
-        <div className={ scss.links }>
+        <section className={ scss.links }>
             <div className="inner">
                 <Title>リンク / Links</Title>
                 <ul>
@@ -24,7 +24,7 @@ const Links: FC = () => {
                     <li><a href="https://pw.kyoya0819.com/" rel="noopener noreferrer" target="_blank">PasswordMaker</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
     );
 };
 

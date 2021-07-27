@@ -13,7 +13,7 @@ const First: FC = () => {
     });
 
     return (
-        <div className={ scss.first }>
+        <section className={ scss.first }>
             <img src={ background } className={ scss.background } id="sky" alt="sky" />
             <div className="inner">
                 <h1>kyoya0819</h1>
@@ -28,7 +28,7 @@ const First: FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -7,7 +7,7 @@ import Title from "components/Title/Title";
 const About: FC = () => {
 
     return (
-        <div className={ scss.about }>
+        <section className={ scss.about }>
             <div className="inner">
                 <Title>自己紹介 / About</Title>
                 <div>
@@ -22,7 +22,7 @@ const About: FC = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
