@@ -8,7 +8,7 @@ const Contact: FC = () => {
     return (
         <section className={ scss.contact }>
             <div className="inner">
-                <Title>お問い合わせ / Contact</Title>
+                <Title>連絡先 / Contact</Title>
                 <a href="mailto:kyoya0819@gmail.com" rel="noopener noreferrer" target="_blank">kyoya0819@gmail.com</a>
             </div>
         </section>
