@@ -18,6 +18,8 @@ const Links: FC = () => {
                     <li><a href="https://twitter.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ twitter } alt="Twitter's logo" />Twitter</a></li>
                     <li><a href="https://github.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub's logo" />GitHub</a></li>
                     <li><a href="https://facebook.com/kyoya0819" rel="noopener noreferrer" target="_blank"><img src={ facebook } alt="Facebook's logo" />Facebook</a></li>
+                </ul>
+                <ul>
                     <li><a href="https://www.resume.id/kyoya0819" rel="noopener noreferrer" target="_blank">RESUME</a></li>
                     <li><a href="https://teratail.com/users/kyoya0819" rel="noopener noreferrer" target="_blank">teratail</a></li>
                     <li><a href="https://qiita.com/kyoya0819" rel="noopener noreferrer" target="_blank">Qiita</a></li>
