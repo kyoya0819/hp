@@ -1,7 +1,12 @@
 import React, { FC, useEffect } from "react";
 
+import Link from "components/Link/Link";
+
 import scss from "./First.module.scss";
 
+import twitter from "images/twitter.png";
+import github from "images/github.png";
+import facebook from "images/facebook.png";
 import background from "images/background.webp";
 
 const First: FC = () => {
@@ -15,8 +20,14 @@ const First: FC = () => {
     return (
         <section className={ scss.first }>
             <img src={ background } className={ scss.background } id="sky" alt="sky" />
-            <div className="inner">
+            <div className={`inner ${scss.inner}`}>
                 <h1>kyoya0819</h1>
+
+                <div className={ scss.right }>
+                    <Link href="https://twitter.com/kyoya0819" target="_blank"><img src={ twitter } alt="Twitter's logo" /></Link>
+                    <Link href="https://facebook.com/kyoya0819" target="_blank"><img src={ facebook } alt="Facebook's logo" /></Link>
+                    <Link href="https://github.com/kyoya0819" target="_blank"><img src={ github } alt="GitHub's logo" /></Link>
+                </div>
             </div>
 
             <div className={ scss.box } />
