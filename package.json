@@ -46,7 +46,7 @@
     },
     "devDependencies": {
         "@types/react-burger-menu": "^2.8.1",
-        "@types/react-router-dom": "^5.1.6",
+        "@types/react-router-dom": "^5.1.8",
         "@typescript-eslint/eslint-plugin": "^4.29.1",
         "@typescript-eslint/parser": "^4.29.1",
         "eslint": "^7.32.0",
