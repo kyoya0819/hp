@@ -56,8 +56,8 @@ const easeInOut = (x: number) => {
 const scroll = () => {
 
     let count = 0;
-    const first = window.pageYOffset;
-    const height = window.innerHeight - window.pageYOffset;
+    const first = window.scrollY;
+    const height = window.innerHeight - window.scrollY;
 
     const move = function () {
         count++;
