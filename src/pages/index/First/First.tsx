@@ -42,6 +42,7 @@ const First: FC = () => {
         </section>
     );
 };
+export default First;
 
 
 const easeInOut = (x: number) => {
@@ -71,5 +72,3 @@ const scroll = () => {
 
     requestAnimationFrame(move);
 };
-
-export default First;
