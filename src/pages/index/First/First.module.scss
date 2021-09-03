@@ -65,19 +65,19 @@
                     transform: skewX(0) translateX(100vw);
                 }
                 to {
-                    transform: skewX(-20deg) translateX(0);
+                    transform: skewX(-30deg) translateX(0);
                 }
             }
 
             @keyframes view-top-step2 {
                 0% {
-                    transform: skewX(-20deg);
-                }
-                50% {
                     transform: skewX(-30deg);
                 }
+                50% {
+                    transform: skewX(-25deg);
+                }
                 100% {
-                    transform: skewX(-20deg);
+                    transform: skewX(-30deg);
                 }
             }
         }
@@ -91,19 +91,19 @@
                     transform: skewX(0) translateX(100vw);
                 }
                 to {
-                    transform: skewX(20deg) translateX(0);
+                    transform: skewX(30deg) translateX(0);
                 }
             }
 
             @keyframes view-bottom-step2 {
                 0% {
-                    transform: skewX(20deg);
-                }
-                50% {
                     transform: skewX(30deg);
                 }
+                50% {
+                    transform: skewX(25deg);
+                }
                 100% {
-                    transform: skewX(20deg);
+                    transform: skewX(30deg);
                 }
             }
         }
