@@ -51,7 +51,7 @@
             z-index: 35;
             animation-duration: 1s, 30s;
             animation-timing-function: ease-in-out, ease-in-out;
-            animation-fill-mode: both, none;
+            animation-fill-mode: forwards, none;
             animation-iteration-count: 1, infinite;
             animation-delay: 0s, 1s;
         }
