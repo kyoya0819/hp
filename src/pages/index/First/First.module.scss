@@ -49,16 +49,63 @@
             top: 0;
             right: 70vw;
             z-index: 35;
+            animation-duration: 1s, 30s;
+            animation-timing-function: ease-in-out, ease-in-out;
+            animation-fill-mode: both, none;
+            animation-iteration-count: 1, infinite;
+            animation-delay: 0s, 1s;
         }
 
         &::before {
             background: rgba($blue-lighter, 30%);
-            transform: skewX(-30deg);
+            animation-name: view-top-step1, view-top-step2;
+
+            @keyframes view-top-step1 {
+                from {
+                    transform: skewX(0) translateX(100vw);
+                }
+                to {
+                    transform: skewX(-20deg) translateX(0);
+                }
+            }
+
+            @keyframes view-top-step2 {
+                0% {
+                    transform: skewX(-20deg);
+                }
+                50% {
+                    transform: skewX(-30deg);
+                }
+                100% {
+                    transform: skewX(-20deg);
+                }
+            }
         }
 
         &::after {
             background: rgba($blue-darker, 30%);
-            transform: skewX(30deg);
+            animation-name: view-bottom-step1, view-bottom-step2;
+
+            @keyframes view-bottom-step1 {
+                from {
+                    transform: skewX(0) translateX(100vw);
+                }
+                to {
+                    transform: skewX(20deg) translateX(0);
+                }
+            }
+
+            @keyframes view-bottom-step2 {
+                0% {
+                    transform: skewX(20deg);
+                }
+                50% {
+                    transform: skewX(30deg);
+                }
+                100% {
+                    transform: skewX(20deg);
+                }
+            }
         }
     }
 
