@@ -28,7 +28,7 @@ const Created: FC = () => {
                         />
                         <CreatedDetail
                             title="株式会社FARMER'S veebo" src={ veebo }
-                            detail="株式会社FARMER'Sからの依頼で作成したECテンプレート。1週間という限られ他期間で開発。現在は別のに置き換わってます。"
+                            detail="株式会社FARMER'Sからの依頼で作成したECテンプレート。1週間という限られた期間で開発。現在は別のに置き換わってます。"
                         />
                         <CreatedDetail title="？？？" detail="現在鋭意製作中" src={ wolf } />
                     </Suspense>
