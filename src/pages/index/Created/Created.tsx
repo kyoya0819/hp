@@ -30,6 +30,10 @@ const Created: FC = () => {
                             title="株式会社FARMER'S veebo" src={ veebo }
                             detail="株式会社FARMER'Sからの依頼で作成したECテンプレート。1週間という限られた期間で開発。現在は別のに置き換わってます。"
                         />
+                        <CreatedDetail
+                            title="株式会社FARMER'S veebo" src={ veebo }
+                            detail="株式会社FARMER'Sからの依頼で作成したフルスクラッチのECサイト。未運用です。"
+                        />
                         <CreatedDetail title="？？？" detail="現在鋭意製作中" src={ wolf } />
                     </Suspense>
                 </div>
