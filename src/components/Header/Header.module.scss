@@ -30,6 +30,10 @@
             margin-right: auto;
         }
 
+        label {
+            display: none;
+        }
+
         .menu {
             display: flex;
             height: 100%;
@@ -45,6 +49,59 @@
                 &:last-of-type a {
                     padding-right: 0;
                 }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            label {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                left: -50%;
+                z-index: 1500;
+                display: block;
+                width: 50%;
+                height: 100%;
+                background: #444;
+                color: #FFF;
+                transition: left 1s;
+
+                li {
+
+                    a {
+                        display: block;
+                        padding: 1.5rem 2rem;
+                    }
+
+                    &:last-of-type a {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+            
+            .black {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #FFF5;
+                opacity: 0;
+                transition: opacity 1s, right 1s;
+            }
+
+            input[type="checkbox"]:checked ~ .menu {
+                left: 0;
+            }
+
+            input[type="checkbox"]:checked ~ .black {
+                right: 0;
+                opacity: 1;
             }
         }
     }

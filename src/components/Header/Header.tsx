@@ -1,6 +1,8 @@
 import React, { FC, useState } from "react";
 import Link from "next/link";
 
+import Hamburger from "./components/Hamburger/Hamburger";
+
 import scss from "./Header.module.scss";
 
 const Header: FC = () => {
@@ -12,10 +14,12 @@ const Header: FC = () => {
             <div className={ "inner " + scss.inner }>
                 <h1><Link href="/">kyoya0819</Link></h1>
 
+                <label htmlFor="hamburger"><Hamburger open={ open } /></label>
                 <input
-                    type="checkbox" checked={ open } id={ scss.checkbox }
+                    type="checkbox" checked={ open } id="hamburger"
                     onChange={ (e) => setOpen(e.target.checked) }
                 />
+                <label htmlFor="hamburger" className={ scss.black } />
 
                 <ul className={ scss.menu }>
                     <li><Link href="/">Top</Link></li>
