@@ -6,6 +6,6 @@ export type histories_type = {
 
 const histories = (): histories_type => {
 
-    return (json as histories_type);
+    return json as histories_type;
 };
 export default histories;
