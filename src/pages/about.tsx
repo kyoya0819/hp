@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Hero from "screens/about/Hero/Hero";
 import Skills from "screens/about/Skills/Skills";
+import Histories from "screens/about/Histories/Histories";
 
 const About: FC = () => {
 
@@ -16,6 +17,7 @@ const About: FC = () => {
             <main>
                 <Hero />
                 <Skills />
+                <Histories />
             </main>
         </>
     );

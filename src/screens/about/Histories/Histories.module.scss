@@ -1,0 +1,117 @@
+.histories {
+    margin-bottom: 3rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    .years {
+        list-style: none;
+        position: relative;
+
+        @media screen and (max-width: 750px) {
+            height: auto!important;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: calc(50% - 1px);
+            top: 0;
+            display: block;
+            width: 2px;
+            height: 100%;
+            background: #FFF;
+
+            @media screen and (max-width: 750px) {
+                left: 0;
+            }
+        }
+
+        .event {
+            position: absolute;
+            display: inline-block;
+            max-width: calc(50% - 2rem);
+            padding: 1rem 2rem;
+            background: #444;
+
+            &:nth-of-type(2n) {
+                left: calc(50% + 3rem);
+
+                &::before {
+                    left: -3rem;
+                }
+
+                &::after {
+                    left: calc(-3rem - 3px);
+                }
+            }
+
+            &:nth-of-type(2n+1) {
+                right: calc(50% + 3rem);
+
+                &::before {
+                    right: -3rem;
+                }
+
+                &::after {
+                    right: calc(-3rem - 3px);
+                }
+            }
+
+            @media screen and (max-width: 750px) {
+                position: relative;
+                left: 0!important;
+                right: 0!important;
+                top: 0!important;
+                margin: .5rem 0 .5rem 2rem;
+                max-width: calc(100% - 2rem);
+                padding: .5rem 1rem;
+
+                &::before {
+                    width: 2rem!important;
+                    left: -2rem!important;
+                }
+
+                &::after {
+                    left: calc(-2rem - 2px)!important;
+                }
+
+                ul {
+                    margin-top: .75rem!important;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: calc(50% - 1px);
+                display: block;
+                width: 3rem;
+                height: 2px;
+                background: #FFF;
+            }
+            
+            &:after {
+                content: "";
+                position: absolute;
+                top: calc(50% - 3px);
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                background: #FFF;
+            }
+
+            ul {
+                list-style: none;
+                margin-top: 1rem;
+                margin-bottom: -.5rem;
+
+                li {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
