@@ -1,0 +1,22 @@
+.sns {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-radius: 99999px;
+
+    img {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .5rem;
+        object-fit: contain;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: -1px;
+        margin-bottom: 1px;
+    }
+}

@@ -1,25 +1,21 @@
 {
-    "short_name": "kyoya0819",
-    "name": "kyoya0819 | シロクマ高校生エンジニア",
+    "name": "kyoya0819's HP",
+    "short_name": "kyoya0819's HP",
+    "start_url": "/",
     "icons": [
         {
-            "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
+            "src": "/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
         },
         {
-            "src": "logo192.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "logo512.png",
-            "type": "image/png",
-            "sizes": "512x512"
+            "src": "/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
-    "start_url": "https://kyoya0819.com",
-    "display": "standalone",
-    "theme_color": "#222222",
-    "background_color": "#222222"
+    "theme_color": "#2f2f2f",
+    "background_color": "#2f2f2f",
+    "display": "fullscreen",
+    "orientation": "portrait"
 }

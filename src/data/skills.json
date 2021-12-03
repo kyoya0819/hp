@@ -1,9 +1,0 @@
-{
-    "programming": [
-        "HTML", "CSS", "JavaScript", "PHP", "TypeScript", "Sass", "Go", "Ruby", "Liquid", "Python", "Java", "SQL",
-        "Vue.js", "React.js", "Nuxt.js", "Next.js", "Laravel", "CakePHP", "WordPress"
-    ],
-    "other": [
-        "Design","Piano", "Clarinet", "Electone", "Composition", "Cooking"
-    ]
-}
