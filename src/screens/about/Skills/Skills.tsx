@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import scss from "./Skills.module.scss";
 
-import skills from "data/skills.json";
+import skills from "data/skills/skills";
 
 const Skills: FC = () => {
 
@@ -14,13 +14,13 @@ const Skills: FC = () => {
                     <h2>Skills</h2>
 
                     <ul className={ scss.list }>{
-                        skills.programming.map((value, index) => {
+                        skills().programming.map((value, index) => {
                             return <li key={ index }>{ value }</li>;
                         })
                     }</ul>
 
                     <ul className={ scss.list }>{
-                        skills.others.map((value, index) => {
+                        skills().others.map((value, index) => {
                             return <li key={ index }>{ value }</li>;
                         })
                     }</ul>
