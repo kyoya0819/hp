@@ -1,0 +1,16 @@
+{
+    "programming": [
+        "HTML",
+        "CSS", "Sass", "BootStrap", "Bulma",
+        "JavaScript", "TypeScript", "JSX", "Vue.js", "Nuxt.js", "React", "Next.js", "Gatsby", "Express.js", "Svelte",
+        "PHP", "Laravel", "Lumen", "CakePHP", "Slim Framework", "WordPress", "Drupal",
+        "SQL", "MySQL / MariaDB", "PostgreSQL",
+        "Python", "Django", "Liquid",
+        "Ruby", "Ruby on Rails",
+        "Go",
+        "Java"
+    ],
+    "others": [
+        "Piano", "Electone", "Clarinet", "Cooking", "Design"
+    ]
+}

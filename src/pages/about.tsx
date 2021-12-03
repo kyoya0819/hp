@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import Head from "next/head";
 
-import Hero from "../screens/index/Hero/Hero";
+import Hero from "screens/about/Hero/Hero";
+import Skills from "screens/about/Skills/Skills";
 
 const About: FC = () => {
 
@@ -14,6 +15,7 @@ const About: FC = () => {
 
             <main>
                 <Hero />
+                <Skills />
             </main>
         </>
     );
