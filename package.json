@@ -7,7 +7,7 @@
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.0.2",
-        "@types/node": "^16.11.7",
+        "@types/node": "^17.0.0",
         "@types/react": "^17.0.34",
         "@types/react-dom": "^17.0.9",
         "react": "^17.0.2",
@@ -49,6 +49,6 @@
         "@typescript-eslint/eslint-plugin": "^4.33.0",
         "@typescript-eslint/parser": "^4.33.0",
         "eslint": "^7.32.0",
-        "eslint-plugin-react": "^7.26.1"
+        "eslint-plugin-react": "^7.27.1"
     }
 }
