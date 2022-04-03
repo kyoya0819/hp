@@ -1,0 +1,66 @@
+.sns {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-radius: 99999px;
+
+    img {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .5rem;
+        object-fit: contain;
+    }
+
+    div {
+        display: inline-block;
+        width: 0;
+        height: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: -1px;
+        margin-bottom: 1px;
+    }
+
+    &[data-sns="twitter"] {
+        background: #1da1f2;
+    }
+
+    &[data-sns="discord"] {
+        background: #5865F2;
+    }
+
+    &[data-sns="github"] {
+        background: #171515;
+    }
+
+    &[data-sns="qiita"] {
+        background: #FFF;
+        color: #3D4040;
+    }
+
+    &[data-sns="zenn"] {
+        background: #3FA8FF;
+    }
+
+    &[data-sns="facebook"] {
+        background: #1877F2;
+    }
+
+    &[data-sns="email"] {
+        background: #555;
+    }
+
+    &.hover {
+        transition: opacity .3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

@@ -4,15 +4,9 @@ import A from "components/A";
 
 import scss from "./Hero.module.scss";
 
-import SNS from "./components/SNS/SNS";
+import SNS from "components/SNS/SNS";
 
 import logo from "images/icon.webp";
-import twitter from "images/twitter.webp";
-import discord from "images/discord.webp";
-import github from "images/github.webp";
-import qiita from "images/qiita.webp";
-import zenn from "images/zenn.webp";
-import facebook from "images/facebook.webp";
 
 const Hero: FC = () => {
 
@@ -29,46 +23,34 @@ const Hero: FC = () => {
                         <h2>kyoya0819 / Miyako Nari</h2>
 
                         <ul className={ scss.sns_list }>
-                            <li><A href="https://twitter.com/kyoya0819">
-                                <SNS
-                                    id={ scss.twitter } className={ scss.hover }
-                                    name="@kyoya0819"
-                                    logo={ twitter.src } width={ 172 } height={ 142 }
-                                />
-                            </A></li>
-                            <li><A href="https://github.com/kyoya0819">
-                                <SNS
-                                    id={ scss.github } className={ scss.hover }
-                                    name="@kyoya0819"
-                                    logo={ github.src } width={ 120 } height={ 120 }
-                                />
-                            </A></li>
-                            <li><A href="https://qiita.com/kyoya0819">
-                                <SNS
-                                    id={ scss.qiita } className={ scss.hover }
-                                    name="@kyoya0819"
-                                    logo={ qiita.src } width={ 120 } height={ 120 }
-                                />
-                            </A></li>
-                            <li><A href="https://zenn.dev/kyoya0819">
-                                <SNS
-                                    id={ scss.zenn } className={ scss.hover }
-                                    name="@kyoya0819"
-                                    logo={ zenn.src } width={ 120 } height={ 120 }
-                                />
-                            </A></li>
-                            <li><A href="https://facebook.com/kyoya0819">
-                                <SNS
-                                    id={ scss.facebook } className={ scss.hover }
-                                    name="@kyoya0819"
-                                    logo={ facebook.src } width={ 120 } height={ 120 }
-                                />
-                            </A></li>
-                            <li><SNS
-                                id={ scss.discord }
-                                name="@kyoya0819#0819"
-                                logo={ discord.src } width={ 142 } height={ 160 }
-                            /></li>
+                            <li>
+                                <A href="https://twitter.com/kyoya0819">
+                                    <SNS name="twitter" hover>@kyoya0819</SNS>
+                                </A>
+                            </li>
+                            <li>
+                                <A href="https://github.com/kyoya0819">
+                                    <SNS name="github" hover>@kyoya0819</SNS>
+                                </A>
+                            </li>
+                            <li>
+                                <A href="https://qiita.com/kyoya0819">
+                                    <SNS name="qiita" hover>@kyoya0819</SNS>
+                                </A>
+                            </li>
+                            <li>
+                                <A href="https://zenn.dev/kyoya0819">
+                                    <SNS name="zenn" hover>@kyoya0819</SNS>
+                                </A>
+                            </li>
+                            <li>
+                                <A href="https://facebook.com/kyoya0819">
+                                    <SNS name="facebook" hover>@kyoya0819</SNS>
+                                </A>
+                            </li>
+                            <li>
+                                <SNS name="discord">@kyoya0819#0819</SNS>
+                            </li>
                         </ul>
                     </div>
                 </div>
