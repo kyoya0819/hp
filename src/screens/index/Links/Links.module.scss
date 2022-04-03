@@ -1,0 +1,35 @@
+.links {
+    margin-bottom: 3rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: -1rem;
+
+        li {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+
+            .button {
+                position: relative;
+                background: #777;
+                padding-right: calc(1rem + .5rem + (.75rem * 1.41421356));
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - (.75rem / 2));
+                    right: calc(1rem + (.75rem * 1.41421356 - .75rem) / 2);
+                    display: inline-block;
+                    width: .75rem;
+                    height: .75rem;
+                    border-right: solid 2px #FFF;
+                    border-bottom: solid 2px #FFF;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 import React, { FC, MouseEventHandler } from "react";
 
+import Button from "components/Button/Button";
+
 import twitter from "images/twitter.webp";
 import discord from "images/discord.webp";
 import github from "images/github.webp";
@@ -28,7 +30,7 @@ const SNS: FC<{
     };
 
     return (
-        <div
+        <Button
             className={ scss.sns + " " + (hover ? scss.hover : "") + (className ?? "") } data-sns={ name }
             onClick={ (e) => {
                 if (onClick) onClick(e);
@@ -40,7 +42,7 @@ const SNS: FC<{
                     : <></>
             }
             <p>{ children }</p>
-        </div>
+        </Button>
     );
 };
 export default SNS;

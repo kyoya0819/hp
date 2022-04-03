@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import Hero from "screens/index/Hero/Hero";
+import Links from "screens/index/Links/Links";
 
 const Home: NextPage = () => {
     return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
 
             <main>
                 <Hero />
+                <Links />
             </main>
         </>
     );
