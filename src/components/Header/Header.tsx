@@ -9,6 +9,10 @@ const Header: FC = () => {
 
     const [open, setOpen] = useState<boolean>(false);
 
+    const clickLink = () => {
+        setOpen(false);
+    };
+
     return (
         <header className={ scss.header }>
             <div className={ "inner " + scss.inner }>
@@ -22,12 +26,28 @@ const Header: FC = () => {
                 <label htmlFor="hamburger" className={ scss.black } />
 
                 <ul className={ scss.menu }>
-                    <li><Link href="/">Top</Link></li>
-                    <li><Link href="/about">About</Link></li>
+                    <li>
+                        <Link href="/">
+                            <a onClick={() => clickLink()}>Top</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/about">
+                            <a onClick={() => clickLink()}>About</a>
+                        </Link>
+                    </li>
                     {/*
-                        <li><Link href="/products">Products</Link></li>
+                    <li>
+                        <Link href="/products">
+                            <a onClick={() => clickLink()}>Products</a>
+                        </Link>
+                    </li>
                     */}
-                    <li><Link href="/contact">Contact</Link></li>
+                    <li>
+                        <Link href="/contact">
+                            <a onClick={() => clickLink()}>Contact</a>
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </header>
