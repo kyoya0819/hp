@@ -2,7 +2,8 @@ import React, { FC } from "react";
 
 const A: FC<{
     href: string,
-    className?: string
+    className?: string,
+    children: React.ReactNode
 }> = ({ href, className, children }) => {
 
     return (

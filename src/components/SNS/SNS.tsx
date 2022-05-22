@@ -16,7 +16,8 @@ const SNS: FC<{
     name?: "twitter"|"discord"|"github"|"qiita"|"zenn"|"facebook"|"email",
     hover?: boolean,
     className?: string,
-    onClick?: MouseEventHandler<HTMLDivElement>
+    onClick?: MouseEventHandler<HTMLDivElement>,
+    children: React.ReactNode
 }> = ({ name, hover= false, className, onClick, children }) => {
 
     const images = {
