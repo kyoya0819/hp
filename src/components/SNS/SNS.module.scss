@@ -4,7 +4,7 @@
         display: block;
         width: 1.5rem;
         height: 1.5rem;
-        margin-right: .5rem;
+        margin-right: .75rem;
         object-fit: contain;
     }
 
@@ -21,41 +21,16 @@
         margin-bottom: 1px;
     }
 
-    &[data-sns="twitter"] {
-        background: #1da1f2;
-    }
-
-    &[data-sns="discord"] {
-        background: #5865F2;
-    }
-
-    &[data-sns="github"] {
-        background: #171515;
-    }
-
-    &[data-sns="qiita"] {
-        background: #FFF;
-        color: #3D4040;
-    }
-
-    &[data-sns="zenn"] {
-        background: #3FA8FF;
-    }
-
-    &[data-sns="facebook"] {
-        background: #1877F2;
-    }
-
-    &[data-sns="email"] {
-        background: #555;
-    }
-
     &.hover {
-        transition: opacity .3s;
+        transition: background .3s;
         cursor: pointer;
 
         &:hover {
-            opacity: .8;
+            background: mix(#222, #111);
+        }
+
+        &:active {
+            background: #111;
         }
     }
 }

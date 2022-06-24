@@ -14,8 +14,9 @@
 
             .button {
                 position: relative;
-                background: #777;
+                background: #222;
                 padding-right: calc(1rem + .5rem + (.75rem * 1.41421356));
+                transition: background .3s;
 
                 &::after {
                     content: "";
@@ -28,6 +29,14 @@
                     border-right: solid 2px #FFF;
                     border-bottom: solid 2px #FFF;
                     transform: rotate(-45deg);
+                }
+
+                &:hover {
+                    background: mix(#222, #111);
+                }
+
+                &:active {
+                    background: #111;
                 }
             }
         }
