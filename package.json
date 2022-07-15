@@ -17,7 +17,7 @@
     },
     "devDependencies": {
         "@types/node": "18.0.0",
-        "@types/react": "18.0.14",
+        "@types/react": "18.0.15",
         "@types/sass": "^1.43.1",
         "@typescript-eslint/eslint-plugin": "^5.29.0",
         "@typescript-eslint/parser": "^5.30.6",
