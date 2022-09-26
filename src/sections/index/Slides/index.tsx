@@ -1,8 +1,21 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 import scss from "./index.module.scss";
 
 const Slides: FC = () => {
+
+    const [loading, setLoading] = useState<boolean>(false);
+    useEffect(() => {
+
+        setLoading(true);
+    }, []);
+
+    const slides =  [
+        {
+            title: "ブラック企業での生き方",
+            src: "https://speakerdeck.com/player/a2287a1e96554d3894826127ba4a3625"
+        }
+    ];
 
     return (
         <section className={ scss.slides }>
@@ -14,12 +27,19 @@ const Slides: FC = () => {
                 </p>
 
                 <ul>
-                    <li>
-                        <iframe
-                            title="ブラック企業での生き方" loading="lazy"
-                            src="https://speakerdeck.com/player/a2287a1e96554d3894826127ba4a3625"
-                        />
-                    </li>
+                    {
+                        slides.map((slide, i) => {
+
+                            return (
+                                <li key={ i }>
+                                    <iframe
+                                        title={ slide.title }
+                                        src={ loading ? slide.src : "" }
+                                    />
+                                </li>
+                            );
+                        })
+                    }
                 </ul>
             </div>
         </section>
