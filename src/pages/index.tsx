@@ -1,23 +1,29 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Hero from "screens/index/Hero/Hero";
-import Links from "screens/index/Links/Links";
+import About from "sections/index/About";
+import Contact from "sections/index/Contact";
+import Hero from "sections/index/Hero";
+import PersonalHistory from "sections/index/PersonalHistory";
+import Skills from "sections/index/Skills";
+import Slides from "sections/index/Slides";
 
 const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>kyoya0819 | TOP</title>
-                <meta name="description" content="" />
+                <title>kyoya0819 / Miyako Nari</title>
             </Head>
 
             <main>
                 <Hero />
-                <Links />
+                <About />
+                <PersonalHistory />
+                <Skills />
+                <Slides />
+                <Contact />
             </main>
         </>
     );
 };
-
 export default Home;

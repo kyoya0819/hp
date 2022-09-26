@@ -1,0 +1,35 @@
+.contact {
+    padding: 5rem 0;
+    text-align: center;
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: -1rem;
+
+        li {
+            margin: 0 1rem 1rem 1rem;
+            line-height: 1.5;
+            text-align: left;
+
+            a {
+                display: block;
+                cursor: pointer;
+
+                span {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
