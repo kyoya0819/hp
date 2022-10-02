@@ -26,6 +26,10 @@
                 }
             }
 
+            span {
+                display: inline-block;
+            }
+
 
             ul {
                 list-style: none;
@@ -53,7 +57,7 @@
                     margin: 0 auto 2rem auto;
 
                     img {
-                        width: 300px;
+                        width: 60%;
                         margin: 0 auto;
                     }
                 }

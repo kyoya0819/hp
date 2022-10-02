@@ -19,7 +19,7 @@ const About: FC = () => {
                     </div>
 
                     <div className={ scss.content }>
-                        <h2>kyoya0819 / Miyako Nari</h2>
+                        <h2><span>kyoya0819</span> / <span>Miyako Nari</span></h2>
 
                         <ul>
                             <li>2003年08月19日生まれ（19歳）</li>
