@@ -1,14 +1,8 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 
 import scss from "./index.module.scss";
 
 const Slides: FC = () => {
-
-    const [loading, setLoading] = useState<boolean>(false);
-    useEffect(() => {
-
-        setLoading(true);
-    }, []);
 
     const slides =  [
         {
@@ -34,7 +28,7 @@ const Slides: FC = () => {
                                 <li key={ i }>
                                     <iframe
                                         title={ slide.title }
-                                        src={ loading ? slide.src : "" }
+                                        src={ slide.src }
                                         loading="lazy"
                                     />
                                 </li>
