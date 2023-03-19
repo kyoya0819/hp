@@ -35,6 +35,7 @@ const Slides: FC = () => {
                                     <iframe
                                         title={ slide.title }
                                         src={ loading ? slide.src : "" }
+                                        loading="lazy"
                                     />
                                 </li>
                             );
