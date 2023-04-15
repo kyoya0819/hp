@@ -25,8 +25,9 @@ const About: FC = () => {
                             <li>2003年08月19日生まれ（19歳）</li>
                             <li>日本大学理工学部建築学科 1年</li>
                             <li>Code for Japan 学生インターン</li>
-                            <li>SecSMS株式会社 エンジニア</li>
-                            <li>北極と千葉を反復横跳び中</li>
+                            <li>SecSMS株式会社 WEBアプリケーションエンジニア</li>
+                            <li>株式会社Almondo WEBアプリケーションエンジニア</li>
+                            <li>北極と東京を反復横跳び中</li>
                         </ul>
                     </div>
                 </div>
