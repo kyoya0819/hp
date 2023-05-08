@@ -26,7 +26,6 @@ const About: FC = () => {
                             <li>日本大学理工学部建築学科 1年</li>
                             <li>Code for Japan 学生インターン</li>
                             <li>SecSMS株式会社 WEBアプリケーションエンジニア</li>
-                            <li>株式会社Almondo WEBアプリケーションエンジニア</li>
                             <li>北極と東京を反復横跳び中</li>
                         </ul>
                     </div>
