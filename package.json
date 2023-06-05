@@ -31,7 +31,7 @@
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-ordered-imports": "^0.6.0",
         "postcss-scss": "^4.0.6",
-        "stylelint": "^15.4.0",
+        "stylelint": "^15.6.3",
         "stylelint-config-recess-order": "^4.0.0",
         "stylelint-scss": "^4.6.0",
         "typescript": "5.0.4"
