@@ -12,9 +12,7 @@ class MyDocument extends Document {
         return (
             <Html lang="ja">
                 <Head>
-                    <!-- Cloudflare Web Analytics -->
                     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "edd65bb1b38a49bb92cca95aa3730777"}'></script>
-                    <!-- End Cloudflare Web Analytics -->
                 </Head>
                 <body>
                     <Main />
