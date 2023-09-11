@@ -22,7 +22,7 @@ const Contact: FC = () => {
                     </li>
                     <li>
                         <a href="https://twitter.com/kyoya0819" className={ scss.link } target="_blank" rel="noopener noreferrer">
-                            <span>Twitter</span>
+                            <span>𝕏</span>
                             <div>@kyoya0819</div>
                         </a>
                     </li>
