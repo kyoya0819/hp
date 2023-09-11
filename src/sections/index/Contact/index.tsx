@@ -32,6 +32,12 @@ const Contact: FC = () => {
                             <div>@kyoya0819</div>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://ky-y.dev/" className={ scss.link } target="_blank" rel="noopener noreferrer">
+                            <span>ky-y.</span>
+                            <div>ky-y.dev</div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>

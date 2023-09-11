@@ -22,9 +22,9 @@ const About: FC = () => {
                         <h2><span>kyoya0819</span> / <span>Miyako Nari</span></h2>
 
                         <ul>
-                            <li>2003年08月19日生まれ（19歳）</li>
-                            <li>日本大学理工学部建築学科 1年</li>
-                            <li>Code for Japan 学生インターン</li>
+                            <li>2003年08月19日生まれ（20歳）</li>
+                            <li>日本大学理工学部建築学科 2年</li>
+                            <li>Code for Japan 学生スタッフ</li>
                             <li>SecSMS株式会社 WEBアプリケーションエンジニア</li>
                             <li>北極と東京を反復横跳び中</li>
                         </ul>
